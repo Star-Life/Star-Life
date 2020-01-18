@@ -68,6 +68,6 @@ function getLocation() {
 function showPosition(position) {
 	document.getElementById("map-title").innerHTML = "The recommended route from your location to us, is below:";	
 	y="";
-	document.getElementById("google-map").innerHTML = <+y+></iframe>;
+	document.getElementById("google-map").innerHTML = "<"+y+"></iframe>";
 		document.getElementById("map-title").innerHTML = "AAAA   "+ y +"   AAAA";	
 }
