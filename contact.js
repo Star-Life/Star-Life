@@ -67,7 +67,7 @@ function getLocation() {
 */
 function showPosition(position) {
 	document.getElementById("map-title").innerHTML = "The recommended route from your location to us, is below:";	
-y="<iframe src=\"https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d253223.8587458276!2d-2.5884569446603813!3d7.396094138143066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s"
+y="iframe src=\"https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d253223.8587458276!2d-2.5884569446603813!3d7.396094138143066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s"
 + position.coords.latitude + position.coords.longitude +
 "!3m2!1d"
 + position.coords.latitude +
@@ -78,7 +78,7 @@ y="<iframe src=\"https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d253223.85
 "!2d"
 + position.coords.longitude +
 "!5e0!3m2!1sen!2suk!4v1579365049470!5m2!1sen!2suk\" "
-	+ "width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\"></iframe>"
+	+ "width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\"></iframe"
 	/*y = "<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d126611.92466949747!2d-2.5184108595311563!3d7.396110534957285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s"
 	+position.coords.latitude+position.coords.longitude+
 		"!3m2!1d"+position.coords.latitude+"!2d"+position.coords.longitude+
