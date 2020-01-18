@@ -1,0 +1,326 @@
+/*
+/	Author: Bruce Kirwan
+/	Web development Assignment A part 1
+/	August 2019
+/
+/	This file contains the cascading style sheet for larger screen displays (>600px width)
+/	it sizes, positions and colors elements
+/	it also hides some elements that should only be displayed in mobile view
+*/
+
+/*	remove margins, padding and borders by default*/
+* {
+    margin: 0;
+    padding: 0;
+	border: 0;
+}
+#body {
+	background-color: rgb(240,248,255);
+}
+
+/*	lid for horizontal separation	*/
+.lid {
+    clear: both;
+    height: 0px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*	no hamburge menu for larger screens 	*/
+#menu {
+	display: none;
+}
+
+/*	styling for the canvas/title	*/
+#canvas, #canvas img {
+	display: block;
+	width:100%;
+	background-color: rgb(0,0,51);
+}
+
+/*
+/	stylings for the navigation menu
+/
+/	disable mobile-view navigation element	*/
+#main-nav {
+		display: none;
+}
+#main-nav-large {
+    display: block;
+    height: 50px;
+	background-image: linear-gradient(rgb(0,0,51), lightblue);
+	position: sticky;		/* position the main menu bar at the top of page, even if you scroll down */
+	top: 0;					/* this may not work for all browsers */
+	z-index: 980;			/* maake sure on top */
+}
+
+#main-nav-large ul {
+    list-style: none;
+	max-width: 1000px;
+	margin:auto;
+}
+
+#main-nav-large a {
+    display: block;
+    color: lightblue;
+    text-decoration: none;
+    height: 50px;
+	border: none;
+    font-weight: bold;
+    text-align: center;
+    font-size: large;
+}
+
+#main-nav-large a:hover {
+    color: white;
+}
+
+#main-nav-large li {
+    float: left;
+    width: 20%;
+}
+
+#color-fade {
+    display: block;
+    height: 20px;
+	background-image: linear-gradient(lightblue, rgb(240,248,255));	
+}
+	
+/*
+/	stylings below for the body of the page
+*/
+#wrapper {
+	max-width: 1000px;
+    margin: auto;
+	position: relative;
+	min-height: 100vh;
+}
+
+#main-content {
+	position: relative;
+	height: 100%;
+	padding-bottom: 20rem;
+}
+
+#menu-i #hamburgerIcon {
+    display: none;
+}
+
+#main-content-1{
+	width: 33%;
+	float: left;
+	list-style-position: inside;
+	list-style-type: circle;
+	font-size: large;
+	padding-left: 2em;
+}
+
+#main-content-a {
+	width: 49%;
+	float: left;
+	overflow: hidden;
+}
+
+#main-content-b {
+	width: 50%;
+	max-width: 500px;
+	float: right;
+	overflow: hidden;
+}
+
+#main-content-b video {
+	width: 100%;
+}
+
+.small {
+	font-size:1.25em;
+	font-family: sans-serif;
+	font-weight: bolder;
+	color:#CEE4F0;
+}
+
+.medium {
+	font-size: 1.25em;
+	font-weight: bolder;
+}
+#main-content-3 {
+	width: 33%;
+	float: right;
+}
+
+
+/*
+/	styling for the slideshow on the home page
+*/
+#slideshow {
+    width: 23%;
+    position: relative;
+}
+
+
+#slideshow img {
+	transition: 1.5s;
+	width: 100%;
+}
+
+#slide-img {
+	padding-bottom: 30em;
+}
+
+#slide-img img {
+	padding-bottom: 30em;
+	position: absolute;
+}
+
+/*
+/	socket test styling on services page
+*/
+
+.item {
+	width: 100%;
+	float: right;
+}
+
+#messageField {
+	height: 10em;
+}
+
+#socketTest {
+	width: 33%;
+	height: 3em;
+	background-color: rgb(204,204,255);
+	border: 2px solid black;
+}
+
+/*
+/	padding on helpdesk accordion, so it moves down a little upon navigation/opening
+*/
+.hd {
+	padding: 5em;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid rgb(51,51,102);
+    outline: none;
+    transition: 0.4s;
+}
+
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active, .accordion:hover {
+        background-color: #ccc;
+    }
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+	float: left;
+}
+.panel ul {
+    position: relative;
+}
+
+.panel img {
+	float: right;
+	width: 35%;
+}
+
+.panel div {
+	float: left;
+	width: 63%
+}
+
+.input{
+	height: 3em;
+	border: solid 2px #d7d7d7;
+	margin-top: 6px;
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+	border-radius: 3px;
+	color: #555555;
+	box-sizing: border-box;
+	width: 100%;
+	background-color: #fafafa;
+	margin-bottom: 24px;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}	
+/*
+*	labels, textboxes and buttons in contact page
+*/
+
+.inputLabel {
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size:1em;
+	color: black;
+	width:45%;
+}
+
+.formText {
+	width: 45%;
+	float: left;
+}
+
+.formTextRight {
+	width: 45%;
+	float: right;
+}
+
+#messageText {
+	height: 7em;
+}
+
+/*	limit size of map on contact page */
+#google-map {
+	max-width: 650px;
+}
+/*
+/	contact page images
+/
+/ only display png alternative for mobile view*/
+.png-images {			
+	display: none;
+}
+
+#first-image {
+	width: 33%;
+	float:left;
+}
+
+#third-image {
+	width: 33%;
+	float:right;
+}
+
+/*	limit size of google map on contact page	*/
+#google-map {
+	max-width: 650px;
+}
+
+/*	style time on site in the footer	*/
+#timeOnSite {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: red;
+}
+/*
+/	ensure the footer item is at the bottom of the page
+*/
+#main-footer {
+	clear: both;
+    position: relative;
+    height: 8rem;
+    margin-top: -8rem;
+	text-align: center;
+}	

@@ -1,2 +1,2 @@
-# Star-Life
-phone, computer and networking services
+# StarLife
+website for Star Life technologies
