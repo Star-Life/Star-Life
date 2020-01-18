@@ -87,5 +87,5 @@ y="<iframe src=\"https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d253223.85
 		"!5e0!3m2!1sen!2suk!4v1579358043858!5m2!1sen!2suk"
 	width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>"*/
 	document.getElementById("google-map").innerHTML = y;
-		document.getElementById("map-title").innerHTML = y;	
+		document.getElementById("map-title").innerHTML = "zzzz"+y+"zzzz";	
 }
